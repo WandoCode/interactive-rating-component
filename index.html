@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="./styles/main.css" rel="stylesheet">
+    <script defer src="./script.js"></script>
+    <title>Interactive rating component</title>
+
+</head>
+<body>
+<div class="comp-rating">
+    <form action="" class="rating">
+        <div class="rating__icon"><img alt="yellow star" src="./images/icon-star.svg"></div>
+
+
+        <h1 class="rating__title">How did we do?</h1>
+
+        <p class="rating__text">Please let us know how we did with your support request. All feedback is appreciated
+            to help us improve our offering!</p>
+
+        <div class="rating__scores">
+            <button class="btn btn--rating rating__score__btn">1</button>
+            <button class="btn btn--rating rating__score__btn">2</button>
+            <button class="btn btn--rating rating__score__btn">3</button>
+            <button class="btn btn--rating rating__score__btn">4</button>
+            <button class="btn btn--rating rating__score__btn">5</button>
+        </div>
+
+        <div class="btn rating__submit">Submit</div>
+    </form>
+
+    <div class="thanks">
+        <div class="thanks__icon"><img alt="data transmission icon" src="./images/illustration-thank-you.svg"></div>
+        <div class="thanks__display">
+            You selected&nbsp;<span class="thanks__display__result"></span>&nbsp;out of 5
+        </div>
+        <h2 class="thanks__title">Thank you!</h2>
+        <p class="thanks__text">We appreciate you taking the time to give a rating. If you ever need more support,
+            don’t hesitate to get in touch!</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+body {
+  height: 100vh;
+  font-family: 'Overpass', sans-serif;
+  background-color: $black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comp-rating {
+  background-color: $very-dark-blue;
+  width: 400px;
+  height: 400px;
+  padding: 2em;
+  border-radius: 1.5em;
+}
+
+p {
+  font-size: 15px;
+  color: $light-grey;
+}
+
+h1 {
+  font-size: 30px;
+  color: $white;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 28px;
+  color: $white;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 500;
+}
+
+.btn {
+  font-family: 'Overpass', sans-serif;
+  text-transform: uppercase;
+  background-color: $orange;
+  border: none;
+  border-radius: 10em;
+  padding: 0.9em;
+  font-weight: 700;
+  color: $white;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: $white;
+    color: $orange;
+  }
+
+  &--rating {
+    display: flex;
+    font-size: 15px;
+    background-color: $dark-blue;
+    font-weight: 500;
+    color: $light-grey;
+    width: 3em;
+    height: 3em;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-left: 1em;
+
+    &:hover {
+      background-color: $orange;
+      color: $white;
+    }
+
+    &.active {
+      color: $white;
+      background-color: $light-grey;
+    }
+  }
+}
+

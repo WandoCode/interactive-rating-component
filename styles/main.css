@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@keyframes fromleft {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+    color: hsl(25deg, 97%, 53%);
+  }
+}
+body {
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(198deg, 24%, 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comp-rating {
+  background-color: hsl(217deg, 27%, 13%);
+  width: 400px;
+  height: 400px;
+  padding: 2em;
+  border-radius: 1.5em;
+}
+
+p {
+  font-size: 15px;
+  color: hsl(217deg, 12%, 63%);
+}
+
+h1 {
+  font-size: 30px;
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Overpass", sans-serif;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 28px;
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Overpass", sans-serif;
+  font-weight: 500;
+}
+
+.btn {
+  font-family: "Overpass", sans-serif;
+  text-transform: uppercase;
+  background-color: hsl(25deg, 97%, 53%);
+  border: none;
+  border-radius: 10em;
+  padding: 0.9em;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+.btn--rating {
+  display: flex;
+  font-size: 15px;
+  background-color: hsla(201deg, 12%, 23%, 0.49);
+  font-weight: 500;
+  color: hsl(217deg, 12%, 63%);
+  width: 3em;
+  height: 3em;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  padding-left: 1em;
+}
+.btn--rating:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+.btn--rating.active {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(217deg, 12%, 63%);
+}
+
+.rating {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rating__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(201deg, 12%, 23%, 0.49);
+  width: 3em;
+  height: 3em;
+  border-radius: 10em;
+}
+.rating__title {
+  margin-bottom: -0.5em;
+}
+.rating__text {
+  line-height: 1.6em;
+}
+.rating__scores {
+  display: flex;
+  justify-content: space-between;
+}
+
+.thanks {
+  padding: 0.5em 0;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.thanks__display {
+  background-color: hsla(201deg, 12%, 23%, 0.49);
+  color: hsl(25deg, 97%, 53%);
+  padding: 0.5em 1.4em 0.4em 1.4em;
+  border-radius: 5em;
+}
+.thanks__title {
+  margin-bottom: -0.4em;
+}
+.thanks__text {
+  text-align: center;
+  line-height: 1.7em;
+}
+
+/*# sourceMappingURL=main.css.map */
