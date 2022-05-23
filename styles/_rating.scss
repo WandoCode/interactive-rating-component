@@ -27,3 +27,42 @@
     justify-content: space-between;
   }
 }
+
+.radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 3em;
+  width: 3em;
+  border-radius: 3em;
+  background-color: $dark-blue;
+
+  &__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 3em;
+    width: 3em;
+    color: $light-grey;
+
+  }
+
+  &__input {
+    height: 0;
+    width: 0;
+    opacity: 0;
+
+    &:hover ~ .radio {
+      cursor: pointer;
+      background-color: $light-grey;
+      color: $white;
+    }
+
+    &:checked ~ .radio {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+}
