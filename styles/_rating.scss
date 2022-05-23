@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
 
+
   &__icon {
     display: flex;
     align-items: center;
@@ -37,6 +38,7 @@
   width: 3em;
   border-radius: 3em;
   background-color: $dark-blue;
+  transition: 0.15s;
 
   &__label {
     display: flex;
@@ -61,8 +63,8 @@
     }
 
     &:checked ~ .radio {
-      background-color: $orange;
-      color: $white;
+      animation: pulse 0.3s forwards;
     }
   }
 }
+
